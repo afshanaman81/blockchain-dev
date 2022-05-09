@@ -1,4 +1,5 @@
 <!-- vscode-markdown-toc -->
+Table of Contents
 * [Introduction](#Introduction)
 	* [ERC-20 Token](#ERC-20Token)
 	* [ER@-721 Token (NFT)](#ER-721TokenNFT)
@@ -14,6 +15,8 @@
 Blockchain related development and implementation of
 - an ERC-20 token
 - an ERC-721 token (NFT)
+- Wallet
+- Vault
 - Dapp
 - DAO
 - Dex
