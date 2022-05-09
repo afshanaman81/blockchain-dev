@@ -37,26 +37,47 @@ Blockchain related development and implementation of
 - node (v16)
   
 ### Global Dependencies
-- yarn, lerna, truffle, ganqache-cli
+- yarn, lerna, truffle, ganqache-cli, solhint
 ```
-$ npm install -g yarn lerna truffle ganache-cli
+$ npm install -g yarn lerna truffle ganache-cli solhint
 ```
 
+### Package Dependencies
+- install the dependecies for all packages, by typing:
+```
+$ npm i && lerna bootstrap
+```
+
+
+### Metamask setup
+- follow this https://docs.matic.network/docs/develop/metamask/config-matic/
+- Fund your wallet from Matic faucet: https://faucet.matic.network/
+
+
+### Generate Mnemonic
+- create a file in the root folder:
+```
+$ touch .secret
+```
+- Generate a new 12-word mnemonic using https://iancoleman.io/bip39/
+- paste the mnemonic into the .secret file
+
+
 ### Compile
-- compile all smart contracts, from roote, by typing:
+- compile all smart contracts, from root folder, by typing:
 ```
 $ yarn compile
 ```
 
 - compile an individual smart contract, by typing:
 ```
-$ yarn compile --scope=<PACKAGE_NAME>
+$ yarn compile --scope <PACKAGE_NAME>
 ```
 
 
 ### Deploy
 - For local deployement, we will use `ganache`. Ganache is a local ethereum node. 
-- Start ganache in a separate terminal:
+- first start ganache in a separate terminal, by typing:
 ```
 $ ganache-cli
 ```

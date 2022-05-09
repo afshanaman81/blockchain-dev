@@ -1,10 +1,11 @@
 {
-  "name": "@ethereum-blockchain/vault",
+  "name": "@ethereum-blockchain/token",
   "version": "0.0.1",
-  "description": "A Vault implementation",
+  "description": "An ERC-20 token implementation",
   "keywords": [
     "ethereum",
-    "vault",
+    "erc20",
+    "token",
     "solidity"
   ],
   "author": "Afshan Martin <afshan.aman@gmail.com>",
