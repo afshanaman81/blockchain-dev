@@ -33,3 +33,40 @@ Blockchain related development and implementation of
 
 
 ## <a name='Setup'></a>Setup
+### Pre-requisites 
+- node (v16)
+  
+### Global Dependencies
+- yarn, lerna, truffle, ganqache-cli
+```
+$ npm install -g yarn lerna truffle ganache-cli
+```
+
+### Compile
+- compile all smart contracts, from roote, by typing:
+```
+$ yarn compile
+```
+
+- compile an individual smart contract, by typing:
+```
+$ yarn compile --scope=<PACKAGE_NAME>
+```
+
+
+### Deploy
+- For local deployement, we will use `ganache`. Ganache is a local ethereum node. 
+- Start ganache in a separate terminal:
+```
+$ ganache-cli
+```
+
+- deploy all smart contracts, in a separate terminal, by typing:
+```
+$ yarn migrate:dev
+```
+
+- deploy an individual smart contract, by typing:
+```
+$ yarn migrate:dev --scope=<PACKAGE_NAME>
+```

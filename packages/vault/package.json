@@ -1,0 +1,54 @@
+{
+  "name": "@ethereum-blockchain/vault",
+  "version": "0.0.1",
+  "description": "A Vault implementation",
+  "keywords": [
+    "ethereum",
+    "vault",
+    "solidity"
+  ],
+  "author": "Afshan Martin <afshan.aman@gmail.com>",
+  "homepage": "https://github.com/am-blockchain/ethereum-dev#readme",
+  "license": "MIT",
+  "main": "lib/vault.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/am-blockchain/ethereum-dev.git"
+  },
+  "scripts": {
+    "console:dev": "npx truffle console --network devGanache",
+    "console:mumbai": "npx truffle console --network mumbaiTestnet",
+    "depcheck": "echo '@chainlink/box' && depcheck --ignore-dirs=build/contracts || true",
+    "solhint": "solhint ./contracts/**/*.sol",
+    "lint": "yarn solhint",
+    "compile": "npx truffle compile",
+    "migrate:local": "npx truffle migrate --reset --network devGanache",
+    "migrate:testnet": "npx truffle migrate --network mumbaiTestnet",
+    "migrate:mainnet": "npx truffle migrate --network maticMainnet",
+    "test": "npx truffle test"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.1.6",
+    "@openzeppelin/contracts": "^3.4.0",
+    "@truffle/hdwallet-provider": "^1.2.3",
+    "truffle-privatekey-provider": "^1.5.0",
+    "dotenv": "^8.2.0",
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "@chainlink/belt": "^0.0.3",
+    "@chainlink/test-helpers": "0.0.5",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "chai": "^4.3.0",
+    "depcheck": "^1.3.1",
+    "solhint": "^3.3.2",
+    "truffle": "^5.1.65"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "ethereum-blockchain",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Ethereum blockchain apps",
+    "main": "index.js",
+    "repository": "git@github.com:am-blockchain/ethereum-dev.git",
+    "license": "MIT",
+    "author": "Afshan Martin <afshan.aman@gmail.com>",
+    "engines": {
+        "node": ">=16.0.0",
+        "yarn": ">=1.0.0"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "start": "lerna run start",
+        "compile": "lerna run compile",
+        "lint": "lerna run lint",
+        "test": "lerna run test",
+        "migrate:local": "lerna run migrate:local",
+        "migrate:testnet": "lerna run migrate:testnet",
+        "migrate:mainnet": "lerna run migrate:mainnet"
+    },
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    }
+}
