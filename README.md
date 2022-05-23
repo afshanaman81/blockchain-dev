@@ -56,7 +56,7 @@ $ lerna bootstrap
 
 
 ### Generate Mnemonic
-- create a file in the root folder:
+- create a file in the package folder:
 ```
 $ touch .secret
 ```
@@ -74,6 +74,8 @@ $ yarn compile
 ```
 $ yarn compile --scope <PACKAGE_NAME>
 ```
+
+e.g `yarn compile --scope @ethereum-blockchain/nft-factory`
 
 
 ### Deploy

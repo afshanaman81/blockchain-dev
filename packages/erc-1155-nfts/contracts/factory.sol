@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import "./nft.sol";
+import "./NFT_ERC1155.sol";
 
 contract FactoryERC1155 {
     ERC1155Token[] public tokens; //an array that contains different ERC1155 tokens deployed

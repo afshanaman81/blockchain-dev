@@ -21,6 +21,7 @@
     "depcheck": "echo '@chainlink/box' && depcheck --ignore-dirs=build/contracts || true",
     "solhint": "solhint ./contracts/**/*.sol",
     "lint": "yarn solhint",
+    "prettier": "prettier --write ./contracts/**/*.sol",
     "compile": "npx truffle compile",
     "migrate:local": "npx truffle migrate --reset --network devGanache",
     "migrate:testnet": "npx truffle migrate --network mumbaiTestnet",
