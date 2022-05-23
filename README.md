@@ -43,9 +43,10 @@ $ npm install -g yarn lerna truffle ganache-cli solhint
 ```
 
 ### Package Dependencies
-- install the dependecies for all packages, by typing:
+- install the dependecies for the root, and all packages, by typing:
 ```
-$ npm i && lerna bootstrap
+$ npm i
+$ lerna bootstrap
 ```
 
 
